@@ -1,6 +1,5 @@
 export const products = [
   {
-    _id: "1",
     name: "Apple AirPods Pro",
     image: "/images/airpods.jpg",
     description:
@@ -13,7 +12,6 @@ export const products = [
     numReviews: 50,
   },
   {
-    _id: "2",
     name: "Amazon Echo (4th Gen)",
     image: "/images/alexa.jpg",
     description:
@@ -26,7 +24,6 @@ export const products = [
     numReviews: 100,
   },
   {
-    _id: "3",
     name: "Sony Alpha a6400 Camera",
     image: "/images/camera.jpg",
     description:
@@ -39,7 +36,6 @@ export const products = [
     numReviews: 75,
   },
   {
-    _id: "4",
     name: "Logitech MX Wireless Mouse",
     image: "/images/mouse.jpg",
     description:
@@ -47,12 +43,11 @@ export const products = [
     brand: "Logitech",
     category: "Accessories",
     price: 99.99,
-    countInStock: 30,
+    countInStock: 0,
     rating: 3.4,
     numReviews: 150,
   },
   {
-    _id: "5",
     name: "Samsung Galaxy S21 Ultra",
     image: "/images/phone.jpg",
     description:
@@ -65,7 +60,6 @@ export const products = [
     numReviews: 200,
   },
   {
-    _id: "6",
     name: "Sony PlayStation 5 Console",
     image: "/images/playstation.jpg",
     description:

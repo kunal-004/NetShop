@@ -1,5 +1,4 @@
 import { Link, useParams } from "react-router-dom";
-import { products } from "../data/product";
 import {
   Button,
   Card,
@@ -10,10 +9,22 @@ import {
   Row,
 } from "react-bootstrap";
 import Rating from "../components/Rating";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const ProductDetail = () => {
-  const { id } = useParams();
-  const item = products.find((product) => product._id === id);
+  const { id: productId } = useParams();
+  const [item, setItem] = useState({});
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const { data } = await axios.get(`/api/product/${productId}`);
+      console.log(data);
+      setItem(data);
+    };
+    fetchProduct();
+  }, [productId]);
+
   return (
     <div>
       <Link to={"/"} className="btn-light alert-dangermy-3 btn">
